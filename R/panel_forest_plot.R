@@ -431,6 +431,7 @@ panel_forest_plot <- function(forest_data,
       expand = c(0, 0)
     ) +
     scale_y_continuous(expand = c(0, 0)) +
-    theme
+    theme +
+    theme(axis.text.x = element_text(size = format_options$text_size * 1.4225))
   main_plot
 }
